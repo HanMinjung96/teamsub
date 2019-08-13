@@ -1,0 +1,111 @@
+$(document).ready(function(){
+    $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+});
+
+
+
+$(function(){
+
+            $('.ct-box2').hide()
+            $('.closebtn a img').hide()
+            $('.closeman').hide()
+            $('.leftwoman').hide()
+
+
+            $('.closebtn a img').on('click',function(){
+            $(this).hide()
+            $('.ct-box2').fadeOut()
+            $('.rightman').animate({"margin-top":"0"})
+            $('.leftman').animate({"margin-top":"0"})
+            $('.closeman').fadeOut()
+            $('.leftwoman').fadeOut()
+
+            })
+
+            $('#asia').on('click',function(){
+                $('.ct-box2').fadeIn()
+                $('.closebtn a img').fadeIn(1000)
+                $('.asiabox').show()
+                $('.leftman').animate({"margin-top":"-100%"})
+                $('.rightman').delay(200).animate({"margin-top":"100%"})
+                $('.closeman').fadeIn(1200)
+                $('.leftwoman').fadeIn(1000)
+                $('.s_americabox').hide()
+                $('.n_americabox').hide()
+                $('.oceanbox').hide()
+                $('.africabox').hide()
+                $('.europebox').hide()
+            })
+            
+            $('#n_america').on('click',function(){
+                $('.ct-box2').fadeIn()
+                $('.closebtn a img').show()
+                $('.leftman').animate({"margin-top":"-100%"})
+                $('.rightman').delay(200).animate({"margin-top":"100%"})
+                $('.closeman').fadeIn(1200)
+                $('.leftwoman').fadeIn(1000)
+                $('.s_americabox').hide()
+                $('.asiabox').hide()
+                $('.oceanbox').hide()
+                $('.africabox').hide()
+                $('.europebox').hide()
+                $('.n_americabox').show()
+            })
+            $('#africa').on('click',function(){
+                $('.ct-box2').fadeIn()
+                $('.closebtn a img').show()
+                $('.leftman').animate({"margin-top":"-100%"})
+                $('.rightman').delay(200).animate({"margin-top":"100%"})
+                $('.closeman').fadeIn(1200)
+                $('.leftwoman').fadeIn(1000)
+                $('.s_americabox').hide()
+                $('.asiabox').hide()
+                $('.oceanbox').hide()
+                $('.n_americabox').hide()
+                $('.europebox').hide()
+                $('.africabox').show()
+            })
+            $('#s_america').on('click',function(){
+                $('.ct-box2').fadeIn()
+                $('.closebtn a img').show()
+                $('.leftman').animate({"margin-top":"-100%"})
+                $('.rightman').delay(200).animate({"margin-top":"100%"})
+                $('.closeman').fadeIn(1200)
+                $('.leftwoman').fadeIn(1000)
+                $('.asiabox').hide()
+                $('.n_americabox').hide()
+                $('.oceanbox').hide()
+                $('.africabox').hide()
+                $('.europebox').hide()
+                $('.s_americabox').show()
+            })
+            $('#europe').on('click',function(){
+                $('.ct-box2').fadeIn()
+                $('.closebtn a img').show()
+                $('.leftman').animate({"margin-top":"-100%"})
+                $('.rightman').delay(200).animate({"margin-top":"100%"})
+                $('.closeman').fadeIn(1200)
+                $('.leftwoman').fadeIn(1000)
+                $('.s_americabox').hide()
+                $('.n_americabox').hide()
+                $('.oceanbox').hide()
+                $('.africabox').hide()
+                $('.asiabox').hide()
+                $('.europebox').show()
+            })
+            $('#oceania').on('click',function(){
+                $('.ct-box2').fadeIn()
+                $('.closebtn a img').show()
+                $('.leftman').animate({"margin-top":"-100%"})
+                $('.rightman').delay(200).animate({"margin-top":"100%"})
+                $('.closeman').fadeIn(1200)
+                $('.leftwoman').fadeIn(1000)
+                $('.s_americabox').hide()
+                $('.n_americabox').hide()
+                $('.asiabox').hide()
+                $('.africabox').hide()
+                $('.europebox').hide()
+                $('.oceanbox').show()
+            })
+        })
+     

@@ -1,0 +1,293 @@
+
+* { box-sizing: border-box; }
+
+body,html{
+    font-family: 'Noto Sans KR', sans-serif;
+     background: url(img/entire_bg.jpg); 
+   width: 100%;
+   /* overflow: hidden;     */
+}
+/* 헤더 */
+
+ 
+
+.nav{
+ justify-content: space-between;
+    display: flex;
+    width:80%;
+}
+header{
+    width: 100%;
+    padding-left: 10%;  
+    z-index: 99999;
+    background: #eee;
+}
+.logo{
+    width: 12%;
+    margin-top: -2%;
+    margin-left: 8%;
+}
+.logo a img{
+    width: 100%;
+
+}
+.logo a{
+    display: block;
+}
+.menus{
+    width: 70%;
+}
+.menus ul {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;;
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+.menus ul li{
+
+    display: inline-block
+}
+.menusub{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    
+    
+}
+.menusub a{
+    display: block;
+    padding: 10px 20px;
+    float: right;
+}
+
+
+.section {position: relative;
+     width: 100%; height: 76vh;}
+
+/* 대륙목록박스 */
+.section .ct_menu { 
+    display: flex; width: 65%;
+    position: absolute; 
+    top: 7%;  left: 17%; border: 10px solid rgb(255, 255, 255);
+    }
+
+.section .ct_menu li { width: 16.6666%; height: 200px;
+    text-align: center; line-height: 200px; border-right: 5px solid #fff;}
+.section .ct_menu li:last-child { border-right: none;}
+.section .ct_menu li a  { width: 100%; height: 100%;
+    display: block;
+     text-decoration: none;
+     background: rgba(0, 0, 0, .5);
+    font-size: 30px;
+    font-weight: 700; color: #ffffff}
+.section .ct_menu li a.on {display: block; background: none;}
+
+
+.ct_menu li:nth-child(1){ background: url(img/zesus.jpg)no-repeat;
+background-size: cover;}
+.ct_menu li:nth-child(2){ background: url(img/naiagara.jpg)no-repeat;
+    background-size: cover}
+.ct_menu li:nth-child(3){ background: url(img/europepic.jpeg)no-repeat;
+        background-size: cover}  
+.ct_menu li:nth-child(4){ background: url(img/asiapic.jpg)no-repeat;
+    background-size: cover}
+.ct_menu li:nth-child(5){ background: url(img/kapetown.jpg)no-repeat;
+    background-size: cover}  
+.ct_menu li:nth-child(6){ background: url(img/operahouse.jpeg)no-repeat;
+    background-size: cover}
+
+
+
+
+/* 대륙나라박스 */
+.ct_box {position: absolute; top: 50%; right: 21%;
+     width: 300px; height: 250px; text-align: center;}
+.ct_box > img { width: 100%;}
+.box1 { width: 300px;  
+    position: absolute; top: 20%; left: 0%;}
+.box1 > h1 { font-size: 50px;}
+.box1 .nation1 { padding: 30px;
+    font-size: 30px; font-weight: 500}
+.box1 .nation2 { 
+    margin: 30px 10px 10px 10px;
+    display: flex;
+    font-size: 15px; font-weight: 500}
+.box1 .nation2 > li {width: 150px;  }
+.box1 .nation3 { 
+    margin: 30px 10px 10px 10px;
+    display: flex;
+    font-size: 27px; font-weight: 500}
+.box1 .nation3 > li {width: 33.33%;}
+     
+     
+/* 섹션 대륙지도*/
+.ct_map { 
+    /* background: #a7dad1; */
+    width: 45%; height: 50vh;
+     position: absolute; 
+     top: 38%;
+     left: 17%;
+    }
+
+.ct_map > p { position: absolute; 
+    font-weight: 700; 
+    font-size:18px; }
+
+
+
+
+/* 지도 */
+
+#n_america { top: 0%; left: 6%;
+    background: url(img/n_america1.png); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;   
+    width: 25%; height: 30vh; text-align: center;
+        line-height: 27vh;}
+
+.ct_map #n_america:hover a {
+        background: url(img/n_america2.png); 
+        background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 100%; height: 30vh; text-align: center; 
+    line-height: 27vh;
+        color: #fff; text-decoration: none;}
+
+
+#s_america { top: 45%; left: 14.5%;
+    background: url(img/s_america1.png); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;   
+    width: 25%; height: 25vh; text-align: center;
+        line-height: 18vh;}
+
+.ct_map #s_america:hover a {
+        background: url(img/s_america2.png); 
+        background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 100%; height: 25vh; text-align: center; 
+    line-height: 18vh;
+        color: #fff; text-decoration: none;}
+
+#europe { top: 12%; left: 35.2%;
+    background: url(img/europe1.png); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;   
+    width: 33%; height: 15vh; text-align: center;
+        line-height: 20vh;
+    }
+
+.ct_map #europe:hover a {
+    background: url(img/europe2.png); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 100%; height: 15vh; 
+    line-height: 20vh;
+    color: #fff; text-decoration: none;}
+ 
+#asia { top: 21%; left: 51%;
+    background: url(img/asia1.png); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;   
+    width: 40%; height: 20vh; text-align: center;
+        line-height: 10vh;}
+
+.ct_map #asia:hover a {
+    background: url(img/asia2.png); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 100%; height: 20vh; text-align: center; 
+    line-height: 10vh;
+    color: rgb(84, 97, 92); text-decoration: none;}
+
+#africa { top: 42%; left: 42%;
+    background: url(img/africa1.png); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;   
+    width: 28%; height: 25vh; text-align: center;
+        line-height: 12vh;}
+
+.ct_map #africa:hover a {
+    background: url(img/africa2.png); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 100%; height: 25vh; text-align: center; 
+    line-height: 12vh;
+    color: #fff; text-decoration: none;}
+    
+
+#oceania { top: 55%; left:75%;
+    background: url(img/oceania1.png); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain; 
+    width: 18%; height: 15vh; text-align: center;
+     line-height: 16vh;}
+
+.ct_map #oceania:hover a {
+     background: url(img/oceania2.png); 
+     background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 100%; height: 15vh; text-align: center; 
+    line-height: 16vh;
+     color: #fff; text-decoration: none;}
+
+
+/* 기본배경캐릭터 */
+.leftman { width: 200px; height: 558px;
+     position: absolute; top: 10%;left: 3%;}
+
+.rightman { width: 300px; height: 500px;
+position: absolute;top: 20%;  right: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
